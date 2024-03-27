@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Graduate&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e46f388f05.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navigation" id="navigation">
+        <img class="logo" id="logo" src="assets/Group.svg" alt="logo">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul class="menu" id="menu">
+                <li class="item"><a href="#main">Projects</a></li>
+                <li class="item"><a href="#skills">Skills</a></li>
+                <li class="item"><a href="#about">About us</a></li>
+                <li class="item"><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <a href="#" id="openBtn">
+            <p class="menu__text">Menu</p>
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
+    </nav>
+    <header class="header" id="header">
+        <div class="header__img">
+            <img class="header__icone" src="assets/Vector.svg" alt="img header">
+        </div>
+        <div class="header__description">
+            <h1 class="header__title">Turning vision <span class="header__inline">into reality with</span><span class="header__inline">code and design</span></h1>
+            <p class="header__text">
+                As a skilled lorem ipsum dolor itsum de messi ronaldo <span class="header__inline">ligue des champions test.Lorem Ipsum is simply dummy</span> 
+                <span class="header__inline">text of the 
+                    printing and  typesetting industry. 
+                </span>Lorem Ipsum has 
+                been the.
+            </p>
+            <div class="header__buttons">
+                <button class="header__cv" id="header__cv">Curriculum Vitae</button>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="content" id="content">
+        <main class="main" id="main">
+            <h2>Projects</h2>
+            <div class="main__projects">
+                 <figure class="main__card">
+                     <img class="main__img" src="assets/messi 1.svg" alt="">
+                     <figcaption class="card__text">
+                         <p>Soccer Jersey Sales</p>
+                         <a href="#main" class="myMdl">Voir plus
+                            <i class="fa-solid fa-arrow-right"></i>
+                         </a>
+                     </figcaption>
+                 </figure>
+                 <figure class="main__card">
+                     <img class="main__img" src="assets/messi 1.svg" alt="">
+                     <figcaption class="card__text">
+                         <p>Soccer Jersey Sales</p>
+                         <a href="#main" class="myMdl">Voir plus
+                            <i class="fa-solid fa-arrow-right"></i>
+                         </a>
+                     </figcaption>
+                 </figure>
+                 <figure class="main__card">
+                     <img class="main__img" src="assets/messi 1.svg" alt="">
+                     <figcaption class="card__text">
+                         <p>Soccer Jersey Sales</p>
+                         <a href="#main" class="myMdl">Voir plus
+                            <i class="fa-solid fa-arrow-right"></i>
+                         </a>
+                     </figcaption>
+                 </figure>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <h2>Soccer Jersey Sales</h2>
+                  <h3>Website</h3>
+                  <img src="assets/messi 1.svg" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quidem corrupti quos nihil enim dignissimos ducimus voluptate nostrum quod laudantium impedit deserunt, ullam facere placeat, rem animi mollitia provident sapiente.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iusto illum veritatis ut tenetur, rerum aliquid explicabo animi ad alias atque placeat quis amet ex officiis hic eos odio incidunt.</p>
+                  <div class="modal__link">
+                    <a href="#">GITHUB</a>
+                  </div>
+                </div>
+            </div>
+         </main>
+         <section class="skills" id="skills">
+             <h2>Technical Skills</h2>
+             <div class="skills__carousel">
+                <img class="elements" src="assets/icons8-html-5-1027 1.svg" alt="">
+                <img class="elements" src="assets/icons8-symfony 1.svg" alt="">
+                <img class="elements" src="assets/icons8-vuejs 1.svg" alt="">
+                <img class="elements" src="assets/icons8-css 1.svg" alt="">
+             </div>
+             <div class="skills__scroll">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+             </div>
+             <div class="up">
+                <a href="#navigation">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+             </div>
+         </section>
+         <section class="about" id="about">
+             <h2>"Passion is the Genesis of Genius"</h2>
+             <div class="about__content">
+                <div class="about__img">
+                    <img class="about__icone" src="assets/Vector.svg" alt="img header">
+                </div>
+                <div class="about__description">
+                    <p id="animate-text"></p>
+                </div>
+             </div>
+         </section>
+         <section class="contact" id="contact">
+             <div class="contact__title">
+                 <img src="assets/🦆 icon _Address Card_.svg" alt="">
+                 <h2>Contact me</h2>
+             </div>
+             <div class="contact__buttons">
+                 <button onclick="mail()">
+                     <img src="assets/icons8-email 1.svg" alt="">
+                     <h3>Email</h3>
+                     <p>Send me an e-mail
+                        <i class="fa-solid fa-arrow-right"></i>
+                     </p>
+                 </button>
+                 <button onclick="call()">
+                     <img src="assets/icons8-téléphone-96 1.svg" alt="">
+                     <h3>Phone</h3>
+                     <p>Send me a text or call
+                        <i class="fa-solid fa-arrow-right"></i>
+                     </p>
+                 </button>
+             </div>
+             <div class="contact__socials">
+                 <img src="assets/🦆 icon _LinkedIn_.svg" alt="">
+                 <img src="assets/🦆 icon _GitHub_.svg" alt="">
+             </div>
+             <p class="contact__footer">©2024 El Hadji Amadou Gaye All rights reserved</p>
+         </section>
+     
+         <footer class="footer">
+             
+         </footer>
+    </section>
+    
+</body>
+
+</html>
