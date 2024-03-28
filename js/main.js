@@ -46,24 +46,24 @@ carousel.addEventListener('mouseleave', function () {
     scrollInterval = setInterval(slide, 50);
 });
 }
-else{
+
+else if (window.matchMedia("(min-width:1024px)").matches) {
   //scroll horizontal
+  gsap.registerPlugin(ScrollTrigger)
 
-gsap.registerPlugin(ScrollTrigger)
+  let sections = gsap.utils.toArray(".elements");
 
-let sections = gsap.utils.toArray(".elements");
-
-gsap.to(sections,{
+  gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".skills__carousel",
-    pin: ".skills",
-    pinSpacing: true,
-    scrub: 1,
-    end: "+=3000",
-  }
-});
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".skills__carousel",
+      pin: ".skills",
+      pinSpacing: true,
+      scrub: 1,
+      end: "+=3000",
+    }
+  });
 }
 
 
@@ -102,6 +102,7 @@ var modal = document.getElementById("myModal");
 
 
 var openModal = document.querySelectorAll(".myMdl");
+var closeModal = document.getElementById("closeButton");
 
 openModal.forEach(item =>{
   item.onclick = function() {
@@ -114,6 +115,9 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+closeModal.onclick = function() {
+    modal.style.display = "none";
 }
 
 //mail
