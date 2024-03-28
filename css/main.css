@@ -222,7 +222,7 @@ h2 {
   background-color: #fff;
   border: 1px solid #fff;
   color: #197BB1;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .header__buttons {
@@ -303,7 +303,7 @@ h2 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
@@ -322,17 +322,22 @@ h2 {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 80vh;
+  height: 85vh;
   border: 2px solid #219EBC;
   border-radius: 20px;
   align-items: center;
   gap: 3rem;
+  position: relative;
 }
 
 .modal-content h3 {
   font-size: 2.5rem;
   font-family: "EB Garamond", sans-serif;
   color: #021620;
+}
+
+.modal-content h2 {
+  font-size: 2rem;
 }
 
 .modal-content p {
@@ -371,6 +376,18 @@ h2 {
   text-decoration: none;
   font-family: "EB Garamond", sans-serif;
   color: #fff;
+  font-weight: 900;
+}
+
+.modal__close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  border-radius: 30px;
+  border: 1px solid #022232;
+  background-color: #022232;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 900;
 }
 
@@ -458,7 +475,7 @@ h2 {
   border: 1px solid #219EBC;
   border-radius: 2px;
   width: 60vw;
-  height: 20vh;
+  height: 23vh;
   background-color: rgba(133, 189, 203, 0.3019607843);
 }
 
