@@ -79,7 +79,7 @@ const afficher = (texte,element,vitesse) =>{
   },vitesse);
 }
 
-const texte = "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled it to make a type specimen book. It has survived not  only five centuries, but also the leap into electronic typesetting,  remaining essentially unchanged. It was popularised in the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, and more  recently with desktop publishing software like Aldus PageMaker  including versions of Lorem Ipsum.";
+const texte = "Je suis El Hadji Amadou Gaye, un développeur Full Stack passionné par la création de solutions innovantes et fonctionnelles. Avec une expertise solide en développement web, je suis habile dans la création d'interfaces utilisateur dynamiques tout en assurant des performances optimales côté serveur. Ma passion pour le développement ne se limite pas à la programmation. Je suis également un fervent partisan de la collaboration et de la communication efficace au sein d'équipes multidisciplinaires. Si vous recherchez un développeur compétent pour votre prochain projet, n'hésitez pas à me contacter.";
 const element = document.getElementById('animate-text');
 afficher(texte,element,50);
 
@@ -99,25 +99,55 @@ document.getElementById("header__cv").addEventListener("click", function() {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
 
 
 var openModal = document.querySelectorAll(".myMdl");
+var openModal1 = document.querySelectorAll(".myMdl1");
+var openModal2 = document.querySelectorAll(".myMdl2");
+
+
 var closeModal = document.getElementById("closeButton");
+var closeModal1 = document.getElementById("closeButton1");
+var closeModal2 = document.getElementById("closeButton2");
 
 openModal.forEach(item =>{
   item.onclick = function() {
     modal.style.display = "block";
   }
 })
-
+openModal1.forEach(item =>{
+  item.onclick = function() {
+    modal1.style.display = "block";
+  }
+})
+openModal2.forEach(item =>{
+  item.onclick = function() {
+    modal2.style.display = "block";
+  }
+})
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
 }
+
 closeModal.onclick = function() {
     modal.style.display = "none";
+}
+closeModal1.onclick = function() {
+  modal1.style.display = "none";
+}
+closeModal2.onclick = function() {
+  modal2.style.display = "none";
 }
 
 //mail
@@ -134,10 +164,11 @@ function mail() {
 // appeler
 
 function call() {
-  var numero = '+33758289199'; 
+  var numero = '+33758289199'; // Numéro de téléphone (avec le code pays)
 
-  var link = 'tel:' + numero;
-  
-  // Ouvrir le lien tel dans la même fenêtre (appel téléphonique)
-  window.location.href = link;
+  // Créer un lien WhatsApp avec le numéro de téléphone
+  var link = 'https://wa.me/' + numero;
+
+  // Ouvrir le lien WhatsApp dans une nouvelle fenêtre
+  window.open(link);
 }
