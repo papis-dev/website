@@ -172,3 +172,4 @@ function call() {
   // Ouvrir le lien WhatsApp dans une nouvelle fenêtre
   window.open(link);
 }
+
