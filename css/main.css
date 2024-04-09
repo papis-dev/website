@@ -103,6 +103,9 @@ table {
   justify-content: space-between;
   align-items: center;
 }
+.menu a:hover{
+   color : blue;
+}
 
 /* Active class */
 .sidenav.active {
