@@ -88,7 +88,7 @@ afficher(texte,element,50);
 // télécharger cv
 
 document.getElementById("header__cv").addEventListener("click", function() {
-  var lienCV = "../portfolio/CV_2024-01-05_El Hadji Amadou_GAYE.pdf"; // Remplacez ceci par le chemin de votre CV
+  var lienCV = "../CV_2024-01-05_El Hadji Amadou_GAYE.pdf";
   var a = document.createElement("a");
   a.href = lienCV;
   a.download = "VotreCV.pdf"; // Nom de fichier à télécharger
